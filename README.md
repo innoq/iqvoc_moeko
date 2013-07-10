@@ -17,5 +17,5 @@
 2. Assets vorkompilieren:
    `jruby -S bin/rake assets:precompile RAILS_ENV=production`
 3. .war-File erzeugen:
-   `jruby -S bin/warble RAILS_ENV=production
+   `jruby -S bin/warble RAILS_ENV=production`
 4. .war-File im Tomcat deployen
