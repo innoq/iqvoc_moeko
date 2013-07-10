@@ -2,6 +2,7 @@ source 'https://rubygems.org'
 
 gem 'rails', '3.2.13'
 gem 'iqvoc', '~> 4.1.3'
+gem 'warbler', '~> 1.3.6', :require => false
 
 group :assets do
   gem 'therubyrhino'
