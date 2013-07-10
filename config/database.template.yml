@@ -1,0 +1,6 @@
+production:
+  encoding: utf8
+  username:
+  password:
+  database:
+  adapter: oracle_enhanced
