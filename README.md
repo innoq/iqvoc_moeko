@@ -14,8 +14,10 @@
 
 1. Datenbank-Migrationen ausführen:
    `jruby -S bin/rake db:migrate RAILS_ENV=production`
-2. Assets vorkompilieren:
+2. Seed-Daten erzeugen:
+   `jruby -S bin/rake iqvoc:db:seed_all RAILS_ENV=production`
+3. Assets vorkompilieren:
    `jruby -S bin/rake assets:precompile RAILS_ENV=production`
-3. .war-File erzeugen:
+4. .war-File erzeugen:
    `jruby -S bin/warble RAILS_ENV=production`
-4. .war-File im Tomcat deployen
+5. .war-File im Tomcat deployen
