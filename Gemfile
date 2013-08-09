@@ -6,6 +6,8 @@ gem 'warbler', '~> 1.3.6', :require => false
 
 group :assets do
   gem 'therubyrhino'
+  gem 'uglifier', '~> 2.1.2'
+  gem 'sass-rails'
 end
 
 platforms :jruby do
