@@ -1,5 +1,5 @@
 GIT
-  remote: git://github.com/innoq/iqvoc.git
+  remote: https://github.com/innoq/iqvoc.git
   revision: 6cfa907952453da9622e3c18c2f119137b66c107
   specs:
     iqvoc (4.1.3)

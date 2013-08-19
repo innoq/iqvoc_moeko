@@ -1,7 +1,7 @@
 source 'https://rubygems.org'
 
 gem 'rails', '3.2.13'
-gem 'iqvoc', '~> 4.1.3', :github => 'innoq/iqvoc'
+gem 'iqvoc', '~> 4.1.3', :git => 'https://github.com/innoq/iqvoc.git'
 gem 'warbler', '~> 1.3.6', :require => false
 
 group :assets do
