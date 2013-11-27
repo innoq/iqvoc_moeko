@@ -12,12 +12,12 @@
 
 ### Deployment eines neuen Releases
 
-1. Datenbank-Migrationen ausführen:
+1. Datenbank-Migrationen ausführen:<br/>
    `jruby -S bin/rake db:migrate RAILS_ENV=production`
-2. Seed-Daten erzeugen:
+2. Seed-Daten erzeugen:<br/>
    `jruby -S bin/rake iqvoc:db:seed_all RAILS_ENV=production`
-3. Assets vorkompilieren:
+3. Assets vorkompilieren:<br/>
    `jruby -S bin/rake assets:precompile RAILS_ENV=production`
-4. .war-File erzeugen:
+4. .war-File erzeugen:<br/>
    `jruby -S bin/warble RAILS_ENV=production`
 5. .war-File im Tomcat deployen
