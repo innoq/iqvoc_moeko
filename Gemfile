@@ -1,21 +1,20 @@
 source 'https://rubygems.org'
 
-gem 'iqvoc', '~> 4.2.0', :git => 'https://github.com/innoq/iqvoc.git'
-gem 'warbler', '~> 1.3.8', :require => false
-gem 'rubyzip', '< 1.0.0'
+gem 'iqvoc', '~> 4.2.0', :github => 'innoq/iqvoc'
+gem 'warbler', '~> 1.4.0.beta2', :github => 'jruby/warbler', :require => false
 
 platforms :jruby do
-  gem 'jruby-jars', '1.7.4'
+  gem 'jruby-jars', '1.7.8', :require => false
   gem 'therubyrhino'
 end
 
 group :development do
   gem 'better_errors'
-  gem 'binding_of_caller', :platforms => :ruby
+  gem 'binding_of_caller', :platform => :ruby
 end
 
 group :production do
-  gem 'mysql2', :platform => :ruby
+  # gem 'mysql2', :platform => :ruby
   # gem 'activerecord-jdbcmysql-adapter', :platform => :jruby
   gem 'activerecord-oracle_enhanced-adapter', '~> 1.5.0', :platform => :jruby
 end
