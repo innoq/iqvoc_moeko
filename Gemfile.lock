@@ -1,6 +1,6 @@
 GIT
   remote: https://github.com/innoq/iqvoc.git
-  revision: 229fa27f8dedf2c406af9fbb35e7e092cc5ac10d
+  revision: 93797355451cd6386972dbc7647b41c76a8a666a
   specs:
     iqvoc (4.2.0)
       authlogic
