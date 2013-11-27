@@ -1,5 +1,5 @@
 GIT
-  remote: git://github.com/innoq/iqvoc.git
+  remote: https://github.com/innoq/iqvoc.git
   revision: 229fa27f8dedf2c406af9fbb35e7e092cc5ac10d
   specs:
     iqvoc (4.2.0)
@@ -23,7 +23,7 @@ GIT
       uglifier (>= 1.3.0)
 
 GIT
-  remote: git://github.com/jruby/warbler.git
+  remote: https://github.com/jruby/warbler.git
   revision: 3c52f33948bb150b8b166639b200e78791fcbc97
   specs:
     warbler (1.4.1.dev)

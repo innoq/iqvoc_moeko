@@ -1,7 +1,9 @@
 source 'https://rubygems.org'
 
-gem 'iqvoc', '~> 4.2.0', :github => 'innoq/iqvoc'
-gem 'warbler', '~> 1.4.0.beta2', :github => 'jruby/warbler', :require => false
+gem 'iqvoc', '~> 4.2.0', :git => 'https://github.com/innoq/iqvoc.git'
+gem 'warbler', '~> 1.4.0.beta2',
+  :git => 'https://github.com/jruby/warbler.git',
+  :require => false
 
 platforms :jruby do
   gem 'jruby-jars', '1.7.8', :require => false
