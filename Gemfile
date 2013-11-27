@@ -1,16 +1,12 @@
 source 'https://rubygems.org'
 
 gem 'iqvoc', '~> 4.2.0', :git => 'https://github.com/innoq/iqvoc.git'
-gem 'warbler', '~> 1.3.6', :require => false
-
-group :assets do
-  gem 'therubyrhino'
-  gem 'uglifier', '~> 2.1.2'
-  gem 'sass-rails'
-end
+gem 'warbler', '~> 1.3.8', :require => false
+gem 'rubyzip', '< 1.0.0'
 
 platforms :jruby do
   gem 'jruby-jars', '1.7.4'
+  gem 'therubyrhino'
 end
 
 group :development do
@@ -19,5 +15,7 @@ group :development do
 end
 
 group :production do
-  gem 'activerecord-oracle_enhanced-adapter', '~> 1.5.0'
+  gem 'mysql2', :platform => :ruby
+  # gem 'activerecord-jdbcmysql-adapter', :platform => :jruby
+  gem 'activerecord-oracle_enhanced-adapter', '~> 1.5.0', :platform => :jruby
 end
