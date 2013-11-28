@@ -1,6 +1,7 @@
 Iqvoc.config do |config|
   config.register_settings({
-    "title" => "Iqvoc Moeko"
+    'title' => 'Iqvoc Moeko',
+    'languages.pref_labeling' => ['de', 'en']
   })
 end
 
