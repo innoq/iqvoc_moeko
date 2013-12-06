@@ -1,0 +1,10 @@
+#!/bin/sh
+
+set -e
+
+export BUNDLE_GEMFILE=Gemfile.mysql
+bundle --without development test
+bundle exec warble
+rm -rf /usr/local/Cellar/tomcat/7.0.47/libexec/webapps/iqvoc_moeko*
+cp iqvoc_moeko.war /usr/local/Cellar/tomcat/7.0.47/libexec/webapps/
+catalina run
