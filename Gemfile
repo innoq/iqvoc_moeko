@@ -1,13 +1,14 @@
 source 'https://rubygems.org'
+# ruby '1.9.3', :engine => 'jruby', :engine_version => '1.7.9'
 
 gem 'iqvoc', '~> 4.2.0', :git => 'https://github.com/innoq/iqvoc.git'
-gem 'warbler', '~> 1.4.0.beta2',
-  :git => 'https://github.com/jruby/warbler.git',
-  :require => false
+gem 'warbler', '1.4.0', :require => false
+gem 'httpi'
+gem 'nokogiri'
 
-platforms :jruby do
-  gem 'jruby-jars', '1.7.8', :require => false
-  gem 'therubyrhino'
+group :development, :test do
+  gem 'pry-rails'
+  gem 'awesome_print'
 end
 
 group :development do
@@ -15,8 +16,12 @@ group :development do
   gem 'binding_of_caller', :platform => :ruby
 end
 
-group :production do
-  # gem 'mysql2', :platform => :ruby
-  # gem 'activerecord-jdbcmysql-adapter', :platform => :jruby
-  gem 'activerecord-oracle_enhanced-adapter', '~> 1.5.0', :platform => :jruby
+platforms :ruby do
+  gem 'mysql2'
+end
+
+platforms :jruby do
+  gem 'activerecord-oracle_enhanced-adapter', '~> 1.5.0'
+  # gem 'activerecord-jdbcmysql-adapter'
+  gem 'therubyrhino'
 end
