@@ -17,7 +17,7 @@
 2. Seed-Daten erzeugen:<br/>
    `jruby -S bin/rake iqvoc:db:seed_all RAILS_ENV=production`
 3. Assets vorkompilieren:<br/>
-   `jruby -S bin/rake assets:precompile RAILS_ENV=production`
+   `jruby -S bin/rake assets:precompile RAILS_ENV=production RAILS_RELATIVE_URL_ROOT=/meerthes`
 4. .war-File erzeugen:<br/>
    `jruby -S bin/warble RAILS_ENV=production`
 5. .war-File im Tomcat deployen
