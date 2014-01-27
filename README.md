@@ -21,3 +21,14 @@
 4. .war-File erzeugen:<br/>
    `jruby -S bin/warble RAILS_ENV=production`
 5. .war-File im Tomcat deployen
+
+### Import
+
+#### Matches zum UMTHES
+
+Auf Basis von ´./data/matches.csv´ können Matches zu Konzepten im UMTHES erstellt
+werden.
+
+Dazu muss folgender Import-Task ausgeführt werden:
+
+    $ jruby -S bin/rake data:import:matches RAILS_ENV=production
