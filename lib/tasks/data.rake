@@ -34,7 +34,7 @@ namespace :data do
           # ap concept_path
           url = "http://umthes.innoq.com#{concept_path}"
           puts "#{concept.to_s} (#{concept.origin}) skos:closeMatch "
-          Match::SKOS::CloseMatch.create! do |m|
+          Match::SKOS::CloseMatch.where(:concept_id => concept.id, :value => url).first_or_create! do |m|
             m.concept = concept
             m.value = url
           end
