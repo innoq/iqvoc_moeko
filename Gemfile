@@ -1,10 +1,11 @@
 source 'https://rubygems.org'
 # ruby '1.9.3', :engine => 'jruby', :engine_version => '1.7.9'
 
-gem 'iqvoc', '~> 4.3.0', :git => 'https://github.com/innoq/iqvoc.git'
+gem 'iqvoc', '~> 4.3.0'
 gem 'warbler', '1.4.0', :require => false
 gem 'httpi'
 gem 'nokogiri'
+gem 'simple_form', '3.0.1'
 
 group :development, :test do
   gem 'pry-rails'
